@@ -1,0 +1,36 @@
+body{
+	height: 100%;
+	width: 100%;
+	background-color: #708090;	
+}
+
+.nav-item{
+	font-size: 13px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));	
+	grid-gap: 1rem;
+	margin: 70px;
+	padding: 1rem;
+}
+
+
+.card-img-top{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+#img1{
+	object-fit: contain;
+}
+#img2{
+	object-fit: contain;
+}
+
+
+
