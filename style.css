@@ -1,7 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 .nav-item{
-	font-size: 13px;
+	font-size: 15px;
+}
+
+
+a {
+	color: 	#696969;
+	text-decoration: none;
+}
+
+a:hover{
+	color: 	#2F4F4F;
+	text-decoration: none;
+	transition: ease-in 0.2s;
+
 }
 
 .grid-container{

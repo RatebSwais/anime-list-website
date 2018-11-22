@@ -1,7 +1,7 @@
 var query = `{ 
   Page(page: 1, perPage: 20){
     
-    media(seasonYear: 2018, season: FALL){
+    media(seasonYear: 2018){
       title {
         romaji
         english
@@ -51,7 +51,7 @@ var out="";
 var out2="";
 for(var index in object){
   if(object[index].coverImage !== null && object[index].title.romaji!== null){
-  out += "<div class='card' style='width: 20rem;'> <img style='background-size: cover;' src='"+object[index].coverImage.extraLarge+"' class='card-img-top'> <div class='card-body'><h5>'"+object[index].title.romaji+"'</h5><p style='height: 130px; overflow-y: scroll;'>'"+object[index].description+"'</p></div></div>"  
+  out += "<div class='card' style='width: 20rem; height: auto;'> <img style='background-size: cover;' src='"+object[index].coverImage.extraLarge+"' class='card-img-top'> <div class='card-body'><h5>'"+object[index].title.romaji+"'</h5><p style='height: 130px; overflow-y: scroll; display: block;'>'"+object[index].description+"'</p></div></div>"  
 }
 }
 $(".grid-container").html(out);
