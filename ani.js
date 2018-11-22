@@ -51,7 +51,7 @@ var out="";
 var out2="";
 for(var index in object){
   if(object[index].coverImage !== null && object[index].title.romaji!== null){
-  out += "<div class='card' style='width: 20rem;'> <img style='width: 250px;' src='"+object[index].coverImage.extraLarge+"' class='card-img-top'> <div class='card-body'><h5>'"+object[index].title.romaji+"'</h5><p style='height: 130px; overflow-y: scroll;'>'"+object[index].description+"'</p></div></div>"  
+  out += "<div class='card' style='width: 20rem;'> <img style='background-size: cover;' src='"+object[index].coverImage.extraLarge+"' class='card-img-top'> <div class='card-body'><h5>'"+object[index].title.romaji+"'</h5><p style='height: 130px; overflow-y: scroll;'>'"+object[index].description+"'</p></div></div>"  
 }
 }
 $(".grid-container").html(out);
