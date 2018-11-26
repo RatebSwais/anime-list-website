@@ -7,11 +7,11 @@
     const container = document.createElement("div");
     container.setAttribute('class', 'container'); 
     const logo = document.createElement('img');
-    logo.setAttribute('id', 'logo');
+    logo.setAttribute('id', 'logo')
     logo.src = 'chopper.png';
-
     app.appendChild(logo);
     app.appendChild(container);
+   
 
     var query = `{ 
         Page(page: 1, perPage: 20){
@@ -47,10 +47,10 @@
            h1.textContent = object[index].title.romaji;
            const description = document.createElement("p");
            description.textContent = object[index].description;
-           container.appendChild(card);
-           card.appendChild(coverImage);
-           card.appendChild(h1);
-           card.appendChild(description);
+           //container.appendChild(card);
+           //card.appendChild(coverImage);
+           //card.appendChild(h1);
+           //card.appendChild(description);
         };
     }
     else{
