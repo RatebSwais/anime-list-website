@@ -9,7 +9,7 @@
     const logo = document.createElement('img');
     logo.setAttribute('id', 'logo');
     logo.src = 'chopper.png';
-
+    
     app.appendChild(logo);
     app.appendChild(container);
 
